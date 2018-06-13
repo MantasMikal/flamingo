@@ -1,3 +1,17 @@
+/* GRIDS */
+.gridFlamingo {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 50vh);
+}
+
+.gridElements {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 20vh);
+    grid-row: 1;
+}
+
 .header {
     height: 100vh;
     width: 100%;
@@ -7,7 +21,7 @@
 }
 
 .circle {
-    position: relative;
+    position: absolute;
     border-radius: 50%;
     display: inline-block;
     animation: sunMove 1s linear;
@@ -16,11 +30,22 @@
     /* Animtaion-fill-mode: keeps animation */
 }
 
+.textBox{
+    font-family: Helvetica, sans-serif;
+    color: white;
+    grid-column: 2;
+    grid-row: 4;
+}
+
 .flamingo {
-    position: relative;
-    width: 50vw;
-    float: right;
+    grid-column: 2;
+    grid-row: 1/3;
     z-index: 2;
+}
+
+img{
+    float: right;
+    height: 100vh;
 }
 
 
@@ -45,18 +70,25 @@
         transform: translate(80vw, 40vh);
     }
     50%{
-        transform: translate(60vw, 20vh);
+        transform: translate(60vw, 30vh);
         width: 170px;
 	    height: 170px;
         background: #fa8231;
     }
     75%{
-        transform: translate(40vw, 10vh);
+        transform: translate(40vw, 20vh);
     }
     100% {
-        transform: translate(20vw, 5vh);
+        transform: translate(15vw, 15vh);
         width: 200px;
 	    height: 200px; 
         background: #f7e331;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    img{
+        float: right;
+        height: 50vh;
     }
 }
