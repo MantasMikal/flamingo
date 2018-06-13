@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './Header.css'
 import flamingo from './flamingutis4.png'
-import beach from './beachy.png'
+import beach from './sand.png'
 
 export default class Header extends Component {
   render() {
