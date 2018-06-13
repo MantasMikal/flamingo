@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 import './Header.css'
 import flamingo from './flamingutis4.png'
-
+import beach from './beachy.png'
 
 export default class Header extends Component {
   render() {
     return (
       <div className="header">
-        <div className="circle">
+        <div className="sun">
         </div>
+        <div className="beach"><img className="beachImg" src={beach}></img></div>
           <div className="gridFlamingo">
             <div className="flamingo"><img className="flamingoImg" src={flamingo}></img></div>
             <div className="gridElements">
@@ -16,9 +17,7 @@ export default class Header extends Component {
                   <h1>My name's Flamingooo!</h1>
                 </div> 
             </div>
-          </div>
-
-        
+          </div>        
       </div>
     )
   }

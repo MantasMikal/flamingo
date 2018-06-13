@@ -20,7 +20,7 @@
     animation-fill-mode:forwards;
 }
 
-.circle {
+.sun {
     position: absolute;
     border-radius: 50%;
     display: inline-block;
@@ -33,8 +33,11 @@
 .textBox{
     font-family: Helvetica, sans-serif;
     color: white;
-    grid-column: 2;
-    grid-row: 4;
+    font-size: 3em;
+    grid-column: 2/4;
+    grid-row: 3/5;
+    margin-top: 7vh;
+    z-index: 2;
 }
 
 .flamingo {
@@ -43,11 +46,22 @@
     z-index: 2;
 }
 
-img{
+.flamingoImg{
     float: right;
     height: 100vh;
 }
 
+.beach {
+    position: absolute;
+}
+
+.beachImg {
+    height: 50vh;
+    width: 100vw;
+    position: absolute;
+    top: 50vh;
+    z-index: 0;
+}
 
 @keyframes dayShift {
     0%{
@@ -90,5 +104,9 @@ img{
     img{
         float: right;
         height: 50vh;
+    }
+
+    .textBox {
+        font-size: 1.5em;
     }
 }
