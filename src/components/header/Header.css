@@ -1,0 +1,62 @@
+.header {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    animation: dayShift 1s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-fill-mode:forwards;
+}
+
+.circle {
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    animation: sunMove 1s linear;
+    z-index: 1;
+    animation-fill-mode:forwards; 
+    /* Animtaion-fill-mode: keeps animation */
+}
+
+.flamingo {
+    position: relative;
+    width: 50vw;
+    float: right;
+    z-index: 2;
+}
+
+
+@keyframes dayShift {
+    0%{
+        background-color: rgb(8, 16, 17);
+    }
+    100%{ 
+        background-color: rgb(68, 184, 184);
+    }
+}
+
+@keyframes sunMove {
+    0% {
+        transform: translate(110vw, 80vh);
+        width: 150px;
+	    height: 150px; 
+        background: #eb3b5a;
+    }
+    25.5%{
+        background: #fa8231;
+        transform: translate(80vw, 40vh);
+    }
+    50%{
+        transform: translate(60vw, 20vh);
+        width: 170px;
+	    height: 170px;
+        background: #fa8231;
+    }
+    75%{
+        transform: translate(40vw, 10vh);
+    }
+    100% {
+        transform: translate(20vw, 5vh);
+        width: 200px;
+	    height: 200px; 
+        background: #f7e331;
+    }
+}
