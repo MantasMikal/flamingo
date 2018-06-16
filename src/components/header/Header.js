@@ -1,23 +1,20 @@
 import React, { Component } from 'react'
 import './Header.css'
 import flamingo from './flamingutis4.png'
-import beach from './sand.png'
+import beach from './beach-01.svg'
 
 export default class Header extends Component {
   render() {
     return (
-      <div className="header">
+      <div className="header gridFlamingo">
         <div className="sun">
         </div>
-        <div className="beach"><img className="beachImg" src={beach}></img></div>
-          <div className="gridFlamingo">
-            <div className="flamingo"><img className="flamingoImg" src={flamingo}></img></div>
-            <div className="gridElements">
-                <div className="textBox">
-                  <h1>My name's Flamingooo!</h1>
-                </div> 
-            </div>
-          </div>        
+        <div className="flamingo">
+          <img src={flamingo} className="flamingoImg" />
+        </div>
+        <div className="beach">
+          <img src={beach} className="beachImg" />
+        </div>
       </div>
     )
   }

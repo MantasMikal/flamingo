@@ -1,5 +1,12 @@
 .main {
-    background-color: rgb(43, 216, 43);
+    background-color: rgb(243, 226, 132);
     height: 120vh;
     width: 100%;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
