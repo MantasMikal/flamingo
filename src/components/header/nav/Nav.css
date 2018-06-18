@@ -23,7 +23,7 @@
 .navigation a {
     color: #f2f2f2;
     text-align: center;
-    padding: 0 5px 2px 5px;
+    padding: 0 5px 2px 0px;
     text-decoration: none;
     font-family: 'Lobster Two', cursive;
     font-size: calc(12px + 2vw);

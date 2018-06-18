@@ -1,10 +1,10 @@
 
 /* GRIDS */
-.gridFlamingo {
+/* .gridFlamingo {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(2, 50vh);
-}
+} */
 
 .gridElements {
     display: grid;
@@ -80,16 +80,6 @@
     width: 10vw;
     height: 5vh;
 
-}
-
-.toggleNavBtn {
-    position: fixed;
-    z-index: 12;
-    color: white;
-    padding: 10px 10px 10px 10px;
-}
-.toggleNavBtn:hover {
-    color: violet;
 }
 
 @keyframes dayShift {

@@ -2,11 +2,14 @@ import React, { Component } from 'react';
 import './Body.css';
 import flamingoLegs from './flamingoLegs.png'
 import weed from './algae.png'
+import snail from './snail.svg'
+import shrimp from './shrimp.svg'
 
 export default class Body extends Component {
   render() {
     return (
       <div className="main grid">
+
         <div className="textBlock">
           <h1>Pink and proud of it</h1>
           <p>Flamingos love to munch on foods like shrimp, snails, and 
@@ -21,6 +24,12 @@ export default class Body extends Component {
         </div>
         <div className="weed">
           <img className="weedImg" src={weed} alt="weed" />
+        </div>
+        <div className="snail"> 
+          <img className="snailImg" src={snail} alt="snail" />
+        </div>
+        <div className="shrimp"> 
+          <img className="shrimpImg" src={shrimp} alt="shrimp" />
         </div>
       </div>
     )

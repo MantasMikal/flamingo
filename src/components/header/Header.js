@@ -31,7 +31,7 @@ toggleNav() {
 }
   render() {
     return (
-      <div className="header gridFlamingo">
+      <div className="header">
         <div className="sun">
         </div>
         <Nav className="nav" isOpen={this.state.isNavOpen} handleNav={this.toggleNav}/>
