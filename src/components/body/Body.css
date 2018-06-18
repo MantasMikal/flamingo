@@ -1,12 +1,48 @@
 .main {
     background-color: rgb(243, 226, 132);
-    height: 120vh;
     width: 100%;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-rows: 3fr 1fr;
 }
+
+.textBlock {
+    grid-row: 1;
+    grid-column: 2;
+    font-family: Helvetica, sans-serif;
+
+}
+
+.textBlock > h1 {
+    color: #F496BC;
+    font-size: calc(16px + 3vw);
+}
+
+.textBlock > p {
+    color: #44B8B8;
+    font-size: calc(8px + 2vw);
+}
+
+.weed {
+    position: relative;
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.weedImg {
+    position: absolute;
+    bottom: 0;
+    width: 20vw;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .textBlock > h1 {
+        
+    }
+}
+
 

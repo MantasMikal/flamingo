@@ -1,0 +1,27 @@
+.clsFlamingo-1{fill:#ffd48a;}.clsFlamingo-2{fill:#5c4b2f;}.clsFlamingo-3{fill:#fbdde8;}.clsFlamingo-4{fill:#f0659f;}.clsFlamingo-5{fill:#f497bc;}.clsFlamingo-6{fill:#f7b0cb;}.clsFlamingo-7{fill:#fad4e3;}.clsFlamingo-8{fill:#272324;}.clsFlamingo-9{fill:#fff;}
+
+.flamingoImg{
+    position: absolute;
+    top: 10vh;
+    right: -70px;
+    height: 90vh;
+    overflow-x: hidden;
+}
+
+.flamingo {
+    position: relative;
+    grid-column: 2;
+    grid-row: 1/3;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 1000px) {
+    .flamingoImg{
+        height: 50vh;
+        right: 0;
+    }
+
+    .flamingoImg{
+        top: 100px;
+    }
+}
