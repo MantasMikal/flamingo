@@ -29,15 +29,11 @@ toggleNav() {
     })
 
 }
-
-
   render() {
     return (
       <div className="header gridFlamingo">
         <div className="sun">
         </div>
-          <Icon className="toggleNavBtn" size={32} icon={navicon} onClick={this.toggleNav} />
-        {/* <button className="toggleNavBtn" onClick={this.toggleNav}>MENU</button> */}
         <Nav className="nav" isOpen={this.state.isNavOpen} handleNav={this.toggleNav}/>
         <div className="cloud1 cloud">
           <img src={cloud1} />

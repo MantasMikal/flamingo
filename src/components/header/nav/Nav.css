@@ -1,13 +1,19 @@
+ nav {
+     position: absolute;
+ }
+
  .navigation {
     display: none;
     position: fixed;
-    align-items: center;
     flex-direction: column;
-    top: 10vh;
+    height: 100vh;
+    top: 0vh;
     z-index: 11;
-    background-color: rgb(51, 167, 235);
-    box-shadow: 0px 5px  rgb(51, 167, 235);
+    padding: 10vh 10px 10px 10px;
+    background-color: rgb(24, 79, 110);
+    /* box-shadow: 0px 5px  rgb(24, 79, 110); */
     user-select: none;
+    border-radius: 0 0% 5% 0%;
 }
 
 .open {
@@ -17,19 +23,29 @@
 .navigation a {
     color: #f2f2f2;
     text-align: center;
-    padding: 0 20px 2px 15px;
+    padding: 0 5px 2px 5px;
     text-decoration: none;
     font-family: 'Lobster Two', cursive;
     font-size: calc(12px + 2vw);
     user-select: none;
-    /* border-bottom: 3px dotted white; */
+    border-bottom: 3px dotted rgba(255, 255, 255, 0.425); 
 }
+
+.toggleNavBtn {
+    position: fixed;
+    z-index: 12;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+.toggleNavBtn:hover {
+    color: rgb(255, 255, 255);
+} 
 
 /* UTILS */
 
-
-.fast {
-    transition-duration: 0.25s;
+.slideInLeft {
+    animation-duration: 0.25s;
 }
 
 .noselect {
@@ -40,4 +56,10 @@
           -ms-user-select: none; /* Internet Explorer/Edge */
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome and Opera */
+  }
+
+  @media only screen and (max-width: 700px) {
+    .navigation a {
+        font-size: calc(16px + 6vw);
+    }
   }
