@@ -1,5 +1,5 @@
 .main {
-    background-color: rgb(243, 226, 132);
+    background-color: #ffefc2;
     width: 100%;
 }
 
@@ -24,6 +24,7 @@
 .textBlock > p {
     color: #44B8B8;
     font-size: calc(8px + 2vw);
+    display: inline-block;
 }
 
 .weed {

@@ -12,7 +12,8 @@ export default class Nav extends Component {
       let sidebarClass = this.props.isOpen ? 'navigation open fast animated slideInLeft' : 'navigation';
     return (
       <nav>
-        <a><Icon className="toggleNavBtn" size={32} icon={navicon} onClick={this.props.handleNav} /></a>
+        <div className="toggleNavBtn" onClick={this.props.handleNav}><Icon size={32} icon={navicon} /><a>Flamingoo</a></div>
+        
         <div className={sidebarClass}>
             <a href="#">About</a>
             <a href="#">News</a>
