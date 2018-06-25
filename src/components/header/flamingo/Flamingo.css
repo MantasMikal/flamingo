@@ -6,7 +6,7 @@
 
 .flamingo {
     position: absolute;
-    right: -70px;
+    right: -80px;
     top: 10vh;
     z-index: 4;
     transition: .25s ease-out;

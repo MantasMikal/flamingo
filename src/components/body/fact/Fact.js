@@ -5,6 +5,9 @@ import snail from './snail.svg'
 import shrimp from './shrimp.svg'
 import babyFlamingo from './babyFlamigo.svg'
 import fire from './fire.svg'
+import flyingFlamingo from './flyingFlamingo.svg'
+import longLegs from './longLegs.svg'
+import greaterFlamingo from './greaterFlamingo.svg'
 
 export default class Fact extends Component {
     constructor(props){
@@ -59,22 +62,22 @@ let facts = [{
     id: 2,
     name: 'The Name of Flamingo',
     fact: 'The word "flamingo" comes from the Spanish and Latin word "flamenco" which means fire, and refers to the bright color of the birds feathers.',
-    image: snail
+    image: fire
 }, {
     id: 3,
     name: 'The Speed of Flamingo',
     fact: 'When flying in a flock, the top speed of a flamingo can be as high as 35 miles per hour (56 kilometers per hour).',
-    image: snail
+    image: flyingFlamingo
 }, {
 id: 4,
     name: 'The Greater Flamingo',
     fact: 'The greater flamingo is the largest flamingo species and can measure up to five feet tall when standing erect with its head raised, but only weighs a maximum of eight pounds. The lesser flamingo is the smallest flamingo and can reach three feet tall and typically weighs 3-6 pounds.',
-    image: snail
+    image: greaterFlamingo
 }, {
 id: 5,
     name: 'Long Legs',
     fact: 'A adult flamingo"s legs can be 30-50 inches long, which is longer than its entire body. Flamingos often stand on one leg to preserve body heat, tucking the other leg into their plumage so it is kept warm. They will alternate legs to regulate their body temperature..',
-    image: babyFlamingo
+    image: longLegs
 }, {
 id: 6,
     name: 'A long Life Time',

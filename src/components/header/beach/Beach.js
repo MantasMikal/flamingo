@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './Beach.css';
 
+//TODO: Split every part and add as seperate
+
 export default class componentName extends Component {
     constructor(props){
         super(props);
