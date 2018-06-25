@@ -7,7 +7,6 @@ export default class Nav extends Component {
     constructor(props){
         super(props);
     }
-
   render() {
       let sidebarClass = this.props.isOpen ? 'navigation open fast animated slideInLeft' : 'navigation';
     return (
