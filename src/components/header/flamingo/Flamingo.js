@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import './Flamingo.css';
 
-import flamingo from './flamingutis4.png'
-
 export default class Flamingo extends Component {
     constructor(props){
         super(props);
@@ -23,6 +21,7 @@ export default class Flamingo extends Component {
       clearTimeout(this.timeoutId);
     }
   }
+  //Change Plain SVG to a file
   render() {
     return (
         this.state.showFlamingo ? 

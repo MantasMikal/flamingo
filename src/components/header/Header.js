@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import './Header.css'
 import Beach from './beach/Beach';
 import Flamingo from './flamingo/Flamingo';
-
-import { Icon } from 'react-icons-kit'
-import {navicon} from 'react-icons-kit/fa/navicon'
 import cloud1 from './cloud1.svg';
 import cloud2 from './cloud2.svg';
 import cloud3 from './cloud3.svg';
@@ -36,16 +33,16 @@ toggleNav() {
         </div>
         <Nav className="nav" isOpen={this.state.isNavOpen} handleNav={this.toggleNav}/>
         <div className="cloud1 cloud">
-          <img src={cloud1} />
+          <img src={cloud1} alt="Cloud"/>
         </div>
         <div className="cloud2 cloud">
-          <img src={cloud2} />
+          <img src={cloud2} alt="Cloud"/>
         </div>
         <div className="cloud3 cloud">
-          <img src={cloud3} />
+          <img src={cloud3} alt="Cloud"/>
         </div>
         <div className="cloud4 cloud">
-          <img src={cloud2} className="cloudFlipped" style={{transform: "scaleX(-1)"}}/>
+          <img src={cloud2} className="cloudFlipped" style={{transform: "scaleX(-1)"} } alt="Cloud"/>
         </div>
         <div className="gridElements">
           <div className="intro animated slideInLeft">

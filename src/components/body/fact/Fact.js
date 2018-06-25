@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
 import './Fact.css'
-import { CSSTransitionGroup } from 'react-transition-group' // ES6
-import { Icon } from 'react-icons-kit'
-import {ic_explore} from 'react-icons-kit/md/ic_explore'
 
 import snail from './snail.svg'
 import shrimp from './shrimp.svg'
@@ -41,7 +38,7 @@ export default class Fact extends Component {
             <div className="buttonWrapper">
                 <button onClick={this.props.handleFact}>Show me more!</button>
             </div>
-            {/* <Icon size={64} icon={ic_explore} className="generateFactBtn"/> */}
+
         </div>        
       </div>
     )
