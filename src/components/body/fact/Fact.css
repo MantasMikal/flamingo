@@ -1,0 +1,41 @@
+.fact {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 40vw 10vw 40vw;
+    background-color: #1B5D82;
+}
+
+.generateFactBtn {
+    margin: auto;
+    color: white;
+    cursor: pointer;
+}
+
+.factText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding: 2vh 2vw 2vh 2vw;
+    margin: auto;
+}
+
+.factImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 2vw 0 2vw;
+}
+
+.factText p{
+    font-size: calc(8px + 1vw);
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.factText h1{
+    font-size: calc(16px + 2vw);
+
+    font-family: 'Lobster Two', cursive;
+    margin: 0;
+}

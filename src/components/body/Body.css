@@ -1,83 +1,18 @@
-.main {
-    background-color: #ffefc2;
-    width: 100%;
-}
-
 .grid {
     display: grid;
-    grid-template-columns: 1fr 5fr 2fr;
-    grid-template-rows: 3fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 5vh 1fr 5vh;
+    background-color: #1B5D82;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.textBlock {
-    grid-row: 1;
-    grid-column: 2;
-    font-family: Helvetica, sans-serif;
-
+.mainSeperator {
+    background-color: #1B5D82;
+    grid-column: 1/-1;
 }
 
-.textBlock > h1 {
-    color: #F496BC;
-    font-size: calc(16px + 3vw);
-}
-
-.textBlock > p {
-    color: #44B8B8;
-    font-size: calc(8px + 2vw);
-    display: inline-block;
-}
-
-.weed {
-    position: relative;
+.fact{
+    grid-column: 2/3;
     grid-row: 2;
-    grid-column: 3;
+    border: 3px solid white;
 }
-
-.weedImg {
-    position: absolute;
-    bottom: 0;
-    width: 20vw;
-}
-
-.snailImg {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 20vw;
-}
-.snail {
-    position: relative;
-    grid-row: 2;
-    grid-column: 3;
-}
-
-.shrimpImg {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 20vw;
-    /* transform-origin: center;
-    animation: shrimpSpin 10s infinite linear; */
-}
-.shrimp {
-    position: relative;
-    grid-row: 2;
-    grid-column: 1;
-}
-
-@media only screen and (max-width: 1000px) {
-    .textBlock > h1 {
-    }
-}
-
-
-@keyframes shrimpSpin {
-    0%{
-        transform: rotateZ(0deg);
-    }
-    100%{
-        transform: rotateZ(360deg);
-    }
-}
-
-

@@ -22,6 +22,21 @@
     animation-fill-mode:forwards;
 }
 
+.intro {
+    display: flex;
+    align-items: center;
+
+    grid-column: 1/4;
+    margin-left: 5vw;
+    grid-row: 4;
+    font-size: calc(16px + 2vw);
+    color: rgb(255, 255, 255);
+    font-family: 'Lobster Two', cursive;
+    z-index: 12;
+    text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75px 0.966667px 0px, rgb(0, 0, 0) 1.08333px 1.68333px 0px, rgb(0, 0, 0) 0.133333px 2px 0px, rgb(0, 0, 0) -0.833333px 1.81667px 0px, rgb(0, 0, 0) -1.6px 1.2px 0px, rgb(0, 0, 0) -1.98333px 0.283333px 0px, rgb(0, 0, 0) -1.86667px -0.7px 0px, rgb(0, 0, 0) -1.3px -1.51667px 0px, rgb(0, 0, 0) -0.416667px -1.95px 0px, rgb(0, 0, 0) 0.566667px -1.91667px 0px, rgb(0, 0, 0) 1.41667px -1.41667px 0px, rgb(0, 0, 0) 1.91667px -0.566667px 0px;}
+
+
+
 .sun {
     position: absolute;
     border-radius: 50%;
@@ -85,10 +100,10 @@
 @keyframes dayShift {
     0%{
 
-        background-color: rgb(8, 16, 17);
+        background-color: rgb(65, 139, 139);
     }
     100%{ 
-        background-color: rgb(68, 184, 184);
+        background-color: rgb(98, 201, 201);
     }
 }
 
@@ -166,6 +181,7 @@
         z-index: 10;
         grid-row: 3;
         grid-column: 2;
+        font-size: calc(16px + 2vw);
     }
 }
 

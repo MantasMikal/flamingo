@@ -48,7 +48,8 @@ toggleNav() {
           <img src={cloud2} className="cloudFlipped" style={{transform: "scaleX(-1)"}}/>
         </div>
         <div className="gridElements">
-          <div className="intro">
+          <div className="intro animated slideInLeft">
+            <h1>Flamingo facts</h1>
           </div>
         </div>
 
