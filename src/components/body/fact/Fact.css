@@ -1,41 +1,90 @@
 .fact {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 40vw 10vw 40vw;
+    grid-template-columns: 45vw 1fr 45vw;
     background-color: #1B5D82;
 }
 
-.generateFactBtn {
-    margin: auto;
-    color: white;
-    cursor: pointer;
-}
-
-.factText {
-    display: flex;
+.factWrapper {
     flex-direction: column;
     justify-content: center;
     color: white;
     padding: 2vh 2vw 2vh 2vw;
-    margin: auto;
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.factHeading{
+    font-size: calc(16px + 2vw);
+    font-family: 'Lobster Two', cursive;
+    margin: 0;
+}
+
+.factText{
+    flex-direction: column;
+    font-size: calc(8px + 1vw);
+    font-family: Helvetica, sans-serif;
+    min-height: 50vh;
+    margin-top: 15vh;
 }
 
 .factImg {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 0 2vw 0 2vw;
+    justify-content: center;
+    padding: 2vh 2vw 2vh 2vw;
+    margin: auto;
+    grid-row: 1;
+    grid-column: 1;
+}
+.factImg > img {
+    width: 50vh;
 }
 
-.factText p{
-    font-size: calc(8px + 1vw);
-    margin: 0;
-    font-family: Helvetica, sans-serif;
+.buttonWrapper {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.factText h1{
-    font-size: calc(16px + 2vw);
-
+.buttonWrapper button {
     font-family: 'Lobster Two', cursive;
-    margin: 0;
+    font-size: calc(10px + 1vw);
+    color: #1B5D82;
+    background-color: rgba(255, 255, 255, 0.836);
+    border: none;
+    cursor: pointer;
 }
+
+.buttonWrapper button:hover{
+    transition: 0.2s;
+    background-color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 700px) {
+    .fact {
+        display: grid;
+        grid-template-rows: 10fr 5vh 10fr;
+        grid-template-columns: 1fr;
+        background-color: #1B5D82;
+    }
+    .factImg {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .factWrapper{
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    .factImg img{
+        width: 30vh;
+    }
+
+    .factText{
+        min-height: 30vh;
+        margin-top: 0vh;
+    }
+
+  }
+

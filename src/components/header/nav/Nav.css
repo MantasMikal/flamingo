@@ -1,5 +1,5 @@
  nav {
-     position: fixed;
+     position: absolute;
      z-index: 11;
  }
 
@@ -33,7 +33,7 @@
 }
 
 .toggleNavBtn {
-    position: fixed;
+    position: absolute;
     display: flex;
     align-items: center;
     cursor: pointer;
