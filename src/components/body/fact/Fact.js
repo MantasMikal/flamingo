@@ -59,8 +59,8 @@ export default class Fact extends Component {
             </div>
             <div className="buttonWrapper">
                 <div className="factCounter">{`${this.props.factId}/${facts.length - 1}`}</div>
-               <Icon size={64} icon={ic_chevron_left} onClick={this.props.handlePreviousFact} className="icon"/>
-               <Icon size={64} icon={ic_chevron_right} onClick={this.props.handleNextFact} className="icon"/>
+               <Icon size={'30%'} icon={ic_chevron_left} onClick={this.props.handlePreviousFact} className="icon"/>
+               <Icon size={'30%'} icon={ic_chevron_right} onClick={this.props.handleNextFact} className="icon"/>
             </div>
 
         </div>        

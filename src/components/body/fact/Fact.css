@@ -62,13 +62,10 @@
 }
 
 .icon {
-    font-family: 'Lobster Two', cursive;
-    font-size: calc(10px + 1vw);
-    color: white;
-    background-color: rgba(240, 89, 89, 0.8);
+    color: rgba(240, 89, 89, 0.8);
     border: none;
     cursor: pointer;
-    margin: 0 2vw 0 2vw;
+    width: 30%;
 }
 
 .buttonWrapper button:hover{

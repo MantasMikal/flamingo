@@ -29,7 +29,7 @@ export default class componentName extends Component {
     return (
 <div className="beach">
 <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
-viewBox="100 0 1920 1080" width="100%" className="beachImg">
+viewBox="100 0 1920 1080"  className="beachImg">
     <defs>
         <linearGradient id="linear-gradient" x1="1626.55" y1="662.68" x2="1671.24"
         y2="679.12" gradientUnits="userSpaceOnUse">
