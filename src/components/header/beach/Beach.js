@@ -22,11 +22,9 @@ export default class componentName extends Component {
             isLeftUmbrellaAnimating: true,
             isRightUmbrellaAnimating: true,
             isLeftLeafAnimating: true
-
-
         }
-    }
 
+    }
 
     render() {
         let middleUmbrellaClass = this.state.isMiddleUmbrellaAnimating;
@@ -36,7 +34,7 @@ export default class componentName extends Component {
     return (
 <div className="beach">
     <div className="leftLeafDown animated bounceInLeft"><img src={leftLeafDown} className="leftLeafDownImg"/></div>
-    <div className={leftLeafClass ? 'leftLeaf animated shake' : 'leftLeaf'} onClick={() => this.setState({isLeftLeafAnimating: true})} onAnimationEnd={() => this.setState({isLeftLeafAnimating: false})}>
+    <div className={leftLeafClass ? 'leftLeaf animated bounceInLeft' : 'leftLeaf'} onClick={() => this.setState({isLeftLeafAnimating: true})} onAnimationEnd={() => this.setState({isLeftLeafAnimating: false})}>
         <img src={leftLeaf} className="leftLeafImg"/>
     </div>
 

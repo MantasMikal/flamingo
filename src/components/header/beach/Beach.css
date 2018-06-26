@@ -106,5 +106,13 @@
     .middleUmbrella{
         bottom: -1vh;
     }
+
+    .leftLeaf{
+        left: -5vw;
+    }
+
+    .leftLeafDown{
+        left: -5vw;
+    }
 }
 
