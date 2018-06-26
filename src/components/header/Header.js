@@ -2,10 +2,12 @@ import React, { Component } from 'react'
 import './Header.css'
 import Beach from './beach/Beach';
 import Flamingo from './flamingo/Flamingo';
-import cloud1 from './cloud1.svg';
-import cloud2 from './cloud2.svg';
-import cloud3 from './cloud3.svg';
+
+import cloud1 from '../../assets/img/cloud1.svg';
+import cloud2 from '../../assets/img/cloud2.svg';
+import cloud3 from '../../assets/img/cloud3.svg';
 import Nav from './nav/Nav';
+
 
 //TODO:
 // Move clouds to seperate component
