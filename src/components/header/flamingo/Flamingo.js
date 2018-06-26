@@ -8,28 +8,20 @@ export default class Flamingo extends Component {
         super(props);
     
         this.state = {
-          showFlamingo: false
+          showFlamingo: true
         }
     
-      }
-  componentWillMount() {
-    this.timeoutId = setTimeout(function() {
-      this.setState({showFlamingo: true});
-    }.bind(this), 1000);
-  }
+      }    
+  
 
-  componentWillUnmount() {
-    if (this.timeoutId){
-      clearTimeout(this.timeoutId);
-    }
-  }
+      //Use hiiden class
   //Change Plain SVG to a file
   render() {
-    return (
-        this.state.showFlamingo ? 
-        <div className="flamingo">
-          <img src={flamingo} className="flamingoImg animated bounceInRight" />
-        </div> : null
+    let flamingoClass = this.state.showFlamingo;
+    return ( 
+        <div className={flamingoClass? "flamingo animated bounceInRight" : "flamingo hidden"} onClick={() => this.setState({showFlamingo: !this.state.showFlamingo})}>
+          <img src={flamingo} className="flamingoImg" />
+        </div>
     )
   }
 }

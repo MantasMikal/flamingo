@@ -3,6 +3,7 @@
     grid-template-rows: 1fr;
     grid-template-columns: 45vw 1fr 45vw;
     background-color: #ffdbc2;
+    padding-top: 10vh;
 }
 
 .factWrapper {
@@ -56,17 +57,28 @@
 
 
 .factCounter {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Lobster Two', cursive;
     user-select: none;
+    font-size: calc(8px + 1vw);
     /* min-width: 3vw; */
 }
 
-.icon {
+.iconL, .iconR {
     color: rgba(240, 89, 89, 0.8);
     border: none;
     cursor: pointer;
     width: 30%;
 }
+
+.iconL:hover{
+    color: rgba(247, 154, 154, 0.8);
+    transition: 0.25s;
+}
+.iconR:hover{
+    color: rgba(247, 154, 154, 0.8);
+    transition: 0.25s;
+}
+
 
 .buttonWrapper button:hover{
     transition: 0.2s;

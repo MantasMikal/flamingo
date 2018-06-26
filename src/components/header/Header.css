@@ -47,21 +47,21 @@
     border-radius: 50%;
     display: inline-block;
     animation: sunMove 2s linear;
-    z-index: 1;
+    z-index: 0;
     animation-fill-mode:forwards; 
     /* Animtaion-fill-mode: keeps animation */
 }
 
 
-.cloud {
+.clouds {
     user-select: none;
     opacity: 0.8;
+    z-index: 0;
 }
 
 .cloud1 {
     position: absolute;
     display: inline-block;
-    z-index: 2;
     animation: cloudMove1 60s linear infinite;
     animation-delay: 0s;
     left: -20vw;
@@ -72,7 +72,6 @@
 .cloud3 {
     position: absolute;
     display: inline-block;
-    z-index: 2;
     animation: cloudMove3 55s linear infinite;
     animation-delay: 10s;
     left: -15vw;
@@ -83,7 +82,6 @@
 .cloud2 {
     position: absolute;
     display: inline-block;
-    z-index: 2;
     animation: cloudMove2 50s linear infinite;
     animation-delay: 20s;
     left: -20vw;
@@ -94,7 +92,6 @@
 .cloud4 {
     position: absolute;
     display: inline-block;
-    z-index: 2;
     animation: cloudMove4 40s linear infinite;
     animation-delay: 15s;
     left: -10vw;

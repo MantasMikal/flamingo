@@ -1,17 +1,110 @@
 /* SVG */
 .clsBeach-1{fill:url(#linear-gradient);}.clsBeach-2{fill:url(#linear-gradient-2);}.clsBeach-3{fill:url(#linear-gradient-3);}.clsBeach-4{fill:url(#linear-gradient-4);}.clsBeach-5{fill:url(#linear-gradient-5);}.clsBeach-6{fill:url(#linear-gradient-6);}.clsBeach-7{fill:url(#linear-gradient-7);}.clsBeach-8{fill:url(#linear-gradient-8);}.clsBeach-9{fill:url(#linear-gradient-9);}.clsBeach-10{fill:url(#linear-gradient-10);}.clsBeach-11{fill:url(#linear-gradient-11);}.clsBeach-12{fill:url(#linear-gradient-12);}.clsBeach-13{fill:url(#linear-gradient-13);}.clsBeach-14{fill:url(#linear-gradient-14);}.clsBeach-15{fill:url(#linear-gradient-15);}.clsBeach-16{fill:url(#linear-gradient-16);}.clsBeach-17{fill:url(#linear-gradient-17);}.clsBeach-18{fill:url(#linear-gradient-18);}.clsBeach-19{fill:url(#linear-gradient-19);}.clsBeach-20{fill:url(#linear-gradient-20);}.clsBeach-21{fill:url(#linear-gradient-21);}.clsBeach-22{fill:url(#linear-gradient-22);}.clsBeach-23{fill:url(#linear-gradient-23);}.clsBeach-24{fill:url(#linear-gradient-24);}.clsBeach-25{fill:url(#linear-gradient-25);}.clsBeach-26{fill:url(#linear-gradient-26);}.clsBeach-27{fill:url(#linear-gradient-27);}.clsBeach-28{fill:url(#linear-gradient-28);}.clsBeach-29{fill:url(#linear-gradient-29);}.clsBeach-30{fill:url(#linear-gradient-30);}.clsBeach-31{fill:url(#linear-gradient-31);}.clsBeach-32{fill:url(#linear-gradient-32);}.clsBeach-33{fill:url(#linear-gradient-33);}.clsBeach-34{fill:url(#linear-gradient-34);}.clsBeach-35{fill:url(#linear-gradient-35);}.clsBeach-36{fill:url(#linear-gradient-36);}.clsBeach-37{fill:url(#linear-gradient-37);}.clsBeach-38{fill:url(#linear-gradient-38);}.clsBeach-39{fill:url(#linear-gradient-39);}.clsBeach-40{fill:url(#linear-gradient-40);}.clsBeach-41{fill:url(#linear-gradient-41);}.clsBeach-42{fill:url(#linear-gradient-42);}.clsBeach-43{fill:url(#linear-gradient-43);}.clsBeach-44{fill:url(#linear-gradient-44);}.clsBeach-45{fill:url(#linear-gradient-45);}.clsBeach-46{fill:url(#linear-gradient-46);}.clsBeach-47{fill:url(#linear-gradient-47);}.clsBeach-48{fill:url(#linear-gradient-48);}.clsBeach-49{fill:url(#linear-gradient-49);}.clsBeach-50{fill:url(#linear-gradient-50);}.clsBeach-51{fill:url(#linear-gradient-51);}.clsBeach-52{fill:url(#linear-gradient-52);}.clsBeach-53{fill:url(#linear-gradient-53);}.clsBeach-54{fill:url(#linear-gradient-54);}.clsBeach-55{fill:url(#linear-gradient-55);}.clsBeach-56{fill:url(#linear-gradient-56);}.clsBeach-57{fill:url(#linear-gradient-57);}.clsBeach-58{fill:url(#linear-gradient-58);}.clsBeach-59{fill:url(#linear-gradient-59);}.clsBeach-60{fill:url(#linear-gradient-60);}.clsBeach-61{fill:url(#linear-gradient-61);}.clsBeach-62{fill:url(#linear-gradient-62);}.clsBeach-63{fill:url(#linear-gradient-63);}.clsBeach-64{fill:#77a323;}.clsBeach-65{fill:#8eb72a;}.clsBeach-66{fill:#ffdbc2;}
 
+
 .beach{
-    position: relative;
-    grid-column: 1/3;
-    grid-row: 1/3;
-}
-
-.beachImg {
     position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 3;
-
-    /* Positions element on the bottom if div */
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    z-index: 0;
 }
+
+/* Left Umbrella */
+.leftUmbrella{
+    position: absolute;
+    bottom: 1vh;
+    left: 0vw;
+    z-index: 5;
+}
+.leftUmbrellaImg{
+    width: 25vw;
+
+}
+/* Right Umbrella */
+
+.rightUmbrella{
+    position: absolute;
+    right: 10vw;
+    bottom: 5vh;
+    z-index: 5;
+}
+
+.rightUmbrellaImg{
+    width: 25vw;
+ 
+}
+/* Middle Umbrella */
+
+.middleUmbrella{
+    position: absolute;
+    bottom: 5vh;
+    left: 30vw;
+    z-index: 3;
+}
+
+.middleUmbrellaImg{
+    width: 30vw;
+
+}
+/* Right Leafs */
+.rightLeaf {
+    position: absolute;
+    right: -2vw;
+    top: 0;
+    z-index: 5;
+}
+
+.rightLeafImg {
+    width: 30vw;
+}
+/* Left Leafs */
+.leftLeaf{
+    position: absolute;
+    left: -2vw;
+    top: 0;
+    z-index: 4;
+}
+.leftLeafImg {
+    width: 30vw;
+}
+
+.leftLeafDown {
+    position: absolute;
+    left: -2vw;
+    top: 10vh;
+    z-index: 4;
+}
+.leftLeafDownImg {
+    width: 30vw;
+}
+/* Sand */
+
+.sand {
+    position: absolute;
+    bottom: -15vh;
+    z-index: 10;
+}
+
+.sandImg {
+    width: 100vw;
+    
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .sand {
+        bottom: -5vh;
+    }
+
+    .leftUmbrella {
+        bottom: -1vh;
+    }
+    .rightUmbrella{
+        bottom: 0vh;
+    }
+    .middleUmbrella{
+        bottom: -1vh;
+    }
+}
+

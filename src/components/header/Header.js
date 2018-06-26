@@ -28,22 +28,24 @@ toggleNav() {
     })
 
 }
+
+
   render() {
     return (
       <div className="header">
         <div className="sun">
         </div>
         <Nav className="nav" isOpen={this.state.isNavOpen} handleNav={this.toggleNav}/>
-        <div className="cloud1 cloud">
+        <div className="cloud1 clouds">
           <img src={cloud1} alt="Cloud"/>
         </div>
-        <div className="cloud2 cloud">
+        <div className="cloud2 clouds">
           <img src={cloud2} alt="Cloud"/>
         </div>
-        <div className="cloud3 cloud">
+        <div className="cloud3 clouds">
           <img src={cloud3} alt="Cloud"/>
         </div>
-        <div className="cloud4 cloud">
+        <div className="cloud4 clouds">
           <img src={cloud2} className="cloudFlipped" style={{transform: "scaleX(-1)"} } alt="Cloud"/>
         </div>
         <div className="gridElements">
@@ -52,9 +54,8 @@ toggleNav() {
             <p>The Famous Pink Birdy...</p>
           </div>
         </div>
-
             <Flamingo className="flamingo"/>
-            <Beach className="beach"/>
+            <Beach className="beach" />
         </div>
     )
   }
