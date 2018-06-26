@@ -1,7 +1,7 @@
 .grid {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 5vh 1fr 5vh;
+    grid-template-rows: 15vh 1fr 5vh;
     background-color: #ffdbc2;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -10,21 +10,22 @@
     display: flex;
     align-items: center;
     background-color: #ffdbc2;
-    grid-column: 2;
-
+    grid-column: 2/-1;
+    /* border-top: 5px dotted #1B5D82; */
 }
 
 .mainSeperator h1{
-    font-size: calc(10px + 1vw);
+    font-size: calc(14px + 2vw);
     font-family: 'Lobster Two', cursive;
     color: #1B5D82;
     margin: 0;
+    padding-left: 0vw;
 }
 
 .fact{
     grid-column: 2/3;
     grid-row: 2;
-    border: 3px solid white;
+    /* border: 3px solid white; */
 }
 
 @media only screen and (max-width: 700px) {

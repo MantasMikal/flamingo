@@ -9,25 +9,42 @@ export default class Body extends Component {
     this.state = {
       factId: 0,
     }
-    this.handleFact = this.handleFact.bind(this);
+    this.handleNextFact = this.handleNextFact.bind(this);
+    this.handlePreviousFact = this.handlePreviousFact.bind(this);
   }
 
-  handleFact() {
-    let ranodomId = getRandomInt(7);
+  handleNextFact() {
+    let nextFactId = this.state.factId + 1;
+    //TODO: MOVE FACTS HERE (PARENT) TO GET HOW MUCH FACTS THERE CURRENTLY ARE?
+    nextFactId > 10 ? nextFactId = 0 : nextFactId;
     this.setState({
-      factId: ranodomId
+      factId: nextFactId
+    })
+  }
+
+  handlePreviousFact() {
+    let prevFactId = this.state.factId - 1;
+    //TODO: MOVE FACTS HERE (PARENT) TO GET HOW MUCH FACTS THERE CURRENTLY ARE?
+    console.log("PREVIOUS FACT: ", prevFactId);
+    prevFactId <= 0 ? prevFactId = 10 : prevFactId;
+    this.setState({
+      factId: prevFactId
     })
   }
 
   render() {
     return (
       <div className="main grid">
-        <div className="mainSeperator"><h1>Random facts about flamingo</h1></div>
-        <Fact className="fact" factId={this.state.factId} handleFact={this.handleFact}/>
+        <div className="mainSeperator"><h1>Some interesting facts:</h1></div>
+        <Fact className="fact" factId={this.state.factId} handleNextFact={this.handleNextFact} handlePreviousFact={this.handlePreviousFact}/>
       </div>
     )
   }
 }
+
+Body.defaultProps = {
+  factId: 0
+};
 
 //Utils
 function getRandomInt(max) {

@@ -2,17 +2,18 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 45vw 1fr 45vw;
-    background-color: #1B5D82;
+    background-color: #ffdbc2;
 }
 
 .factWrapper {
     flex-direction: column;
     justify-content: center;
-    color: white;
+    color: #184f6e;
     padding: 2vh 2vw 2vh 2vw;
     grid-row: 1;
     grid-column: 3;
 }
+
 
 .factHeading{
     font-size: calc(16px + 2vw);
@@ -32,32 +33,47 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2vh 2vw 2vh 2vw;
+    padding: 5% 5% 5% 5%;
     margin: auto;
     grid-row: 1;
     grid-column: 1;
+    background-color: #cb86554d;
+    border-radius: 50%;
+    min-height: 70vh;
 }
 .factImg > img {
     width: 70vh;
 }
 
+/* BUTTON */
+
 .buttonWrapper {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
+
 }
 
-.buttonWrapper button {
+
+.factCounter {
+    font-family: Helvetica, Arial, sans-serif;
+    user-select: none;
+    /* min-width: 3vw; */
+}
+
+.icon {
     font-family: 'Lobster Two', cursive;
     font-size: calc(10px + 1vw);
-    color: #1B5D82;
-    background-color: rgba(255, 255, 255, 0.836);
+    color: white;
+    background-color: rgba(240, 89, 89, 0.8);
     border: none;
     cursor: pointer;
+    margin: 0 2vw 0 2vw;
 }
 
 .buttonWrapper button:hover{
     transition: 0.2s;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgba(240, 114, 114, 0.8); */
 }
 
 @media only screen and (max-width: 700px) {
@@ -65,11 +81,12 @@
         display: grid;
         grid-template-rows: 10fr 5vh 10fr;
         grid-template-columns: 1fr;
-        background-color: #1B5D82;
+        background-color: #ffdbc2;
     }
     .factImg {
         grid-row: 1;
         grid-column: 1;
+        min-height: 30vh;
     }
 
     .factWrapper{

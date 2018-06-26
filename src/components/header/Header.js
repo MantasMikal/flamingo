@@ -46,7 +46,8 @@ toggleNav() {
         </div>
         <div className="gridElements">
           <div className="intro animated slideInLeft">
-            <h1>Flamingo facts</h1>
+            <h1>Meet Flamingo!</h1>
+            <p>The Famous Pink Birdy...</p>
           </div>
         </div>
 
