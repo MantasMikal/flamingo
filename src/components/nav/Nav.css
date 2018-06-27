@@ -1,5 +1,5 @@
  nav {
-     position: absolute;
+     position: fixed;
      z-index: 11;
  }
 
@@ -27,13 +27,14 @@
     user-select: none;
     border-radius: 0 0% 0% 0%;
     border: 2px solid white;
+
 }
 
 .open {
     display: flex;
 }
 
-.navigation a {
+.navigation .link {
     color: #f2f2f2;
     text-align: center;
     padding: 0 5px 2px 0px;

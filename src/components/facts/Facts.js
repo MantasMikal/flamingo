@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import './Body.css'
+import './Facts.css'
 import Fact from './fact/Fact'
 
-export default class Body extends Component {
+
+export default class Facts extends Component {
   constructor(props){
     super(props)
 
@@ -42,7 +43,7 @@ export default class Body extends Component {
   }
 }
 
-Body.defaultProps = {
+Facts.defaultProps = {
   factId: 0
 };
 

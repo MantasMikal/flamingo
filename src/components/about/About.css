@@ -1,0 +1,15 @@
+.about {
+    height: 100vh;
+    background-color: #ffdbc2;
+    width: 100%;
+    z-index: 1000;
+}
+
+.gridAbout {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 5vh 1fr 5vh;
+    background-color: #d86a1b;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    z-index: 1000;
+}

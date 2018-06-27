@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Icon } from 'react-icons-kit'
 import {navicon} from 'react-icons-kit/fa/navicon'
+import { Link } from 'react-router-dom';
 import './Nav.css';
 
 export default class Nav extends Component {
@@ -14,9 +15,8 @@ export default class Nav extends Component {
         <div className="toggleNavBtn" onClick={this.props.handleNav}><Icon size={32} icon={navicon} /><a>Menu</a></div>
         
         <div className={sidebarClass}>
-            <a href="#">About</a>
-            <a href="#">News</a>
-            <a href="#">Blog</a>
+        <Link to="/" className="link">Home</Link>
+        <Link to="/about" className="link">About</Link>
         </div>
     </nav>
     )

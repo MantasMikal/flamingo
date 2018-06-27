@@ -6,36 +6,18 @@ import Flamingo from './flamingo/Flamingo';
 import cloud1 from '../../assets/img/cloud1.svg';
 import cloud2 from '../../assets/img/cloud2.svg';
 import cloud3 from '../../assets/img/cloud3.svg';
-import Nav from './nav/Nav';
 
 
 //TODO:
 // Move clouds to seperate component
 
 export default class Header extends Component {
-  constructor(props){
-    super(props);
-
-    this.state = {
-      isNavOpen: false,
-  }
-  this.toggleNav = this.toggleNav.bind(this);
-}
-
-toggleNav() {
-    this.setState({
-        isNavOpen: !this.state.isNavOpen
-    })
-
-}
-
-
   render() {
     return (
       <div className="header">
         <div className="sun">
         </div>
-        <Nav className="nav" isOpen={this.state.isNavOpen} handleNav={this.toggleNav}/>
+        
         <div className="cloud1 clouds">
           <img src={cloud1} alt="Cloud"/>
         </div>

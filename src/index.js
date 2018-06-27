@@ -1,21 +1,47 @@
 
 import ReactDOM from 'react-dom';
 import Header from './components/header/Header'
-import Body from './components/body/Body';
+import Facts from './components/facts/Facts';
 import Footer from './components/footer/Footer';
+import Nav from './components/nav/Nav'
+import About from './components/about/About';
+
+import { BrowserRouter, Route } from 'react-router-dom'
 
 import registerServiceWorker from './registerServiceWorker';
 
 import React, { Component } from 'react'
 
 export default class App extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      isNavOpen: false,
+  }
+  this.toggleNav = this.toggleNav.bind(this);
+}
+
+toggleNav() {
+    this.setState({
+        isNavOpen: !this.state.isNavOpen
+    })
+
+}
+
+
   render() {
     return (
-      <div>
-        <Header />
-        <Body />
-        <Footer />
-      </div>
+        <BrowserRouter>
+          <React.Fragment>
+            <Nav className="nav" isOpen={this.state.isNavOpen} handleNav={this.toggleNav}/>
+            <Header />
+            <Route exact path="/" component={Facts} />
+            <Route path="/about" component={About} />
+            <Footer/>
+          </React.Fragment>
+        </BrowserRouter>
+      
     )
   }
 }
