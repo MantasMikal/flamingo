@@ -4,6 +4,10 @@
     grid-template-columns: 45vw 1fr 45vw;
     background-color: #ffdbc2;
     padding-top: 10vh;
+    padding-bottom: 2vh;
+
+    grid-column: 2/3;
+    grid-row: 2;
 }
 
 .factWrapper {
@@ -40,10 +44,18 @@
     grid-column: 1;
     background-color: #cb86554d;
     border-radius: 50%;
-    min-height: 70vh;
+    min-height: 60vh;
+
+    cursor: pointer;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s;
 }
+
+.factImg:hover{
+    transform: scale(1.1);
+}
+
 .factImg > img {
-    width: 70vh;
+    width: 60vh;
 }
 
 /* BUTTON */

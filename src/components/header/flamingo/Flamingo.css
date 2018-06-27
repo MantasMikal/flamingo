@@ -1,15 +1,24 @@
 .clsFlamingo-1{fill:#ffd48a;}.clsFlamingo-2{fill:#5c4b2f;}.clsFlamingo-3{fill:#fbdde8;}.clsFlamingo-4{fill:#f0659f;}.clsFlamingo-5{fill:#f497bc;}.clsFlamingo-6{fill:#f7b0cb;}.clsFlamingo-7{fill:#fad4e3;}.clsFlamingo-8{fill:#272324;}.clsFlamingo-9{fill:#fff;}
 
-.flamingoImg{
-    height: 90vh;
-}
+
 
 .flamingo {
     position: absolute;
     right: -80px;
     top: 10vh;
-    z-index: 2;
+    z-index: 6;
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
+.flamingoImg{
+    height: 90vh;
+    cursor: pointer;
+}
+
+.flamingo:hover{
+    transform: scale(1.02);
+}
+
 
 /* ANIMATIONS */
 
@@ -20,45 +29,6 @@
 
 /* CUSTOM BOUNCE IN ANIMATION */
 
-.bounceInRight {
-    animation-name: bounceInRight;
-}
-
-  
-@keyframes bounceInRight {
-    from,
-    60%,
-    75%,
-    90%,
-    to {
-      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-  
-    from {
-        transform: translate3d(80vh, 0, 0);
-    }
-
-    45%{
-        transform: translate3d(1000px, 0, 0);
-    }
-  
-    60% {
-      transform: translate3d(-25px, 0, 0);
-    }
-  
-    75% {
-      transform: translate3d(10px, 0, 0);
-    }
-  
-    90% {
-      transform: translate3d(-5px, 0, 0);
-    }
-  
-    to {
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  
 @media only screen and (max-width: 1000px) {
     .flamingoImg{
         height: 40vh;
@@ -71,38 +41,4 @@
     .hidden{
         right: -20vh;
     }
-
-    @keyframes bounceInRight {
-        from,
-        30%,
-        60%,
-        75%,
-        90%,
-        to {
-          animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-        }
-      
-        from {
-            transform: translate3d(10vh, 0, 0);
-        }
-        45%{
-            transform: translate3d(30vh, 0, 0);
-        }
-
-        60% {
-          transform: translate3d(-25px, 0, 0);
-        }
-      
-        75% {
-          transform: translate3d(10px, 0, 0);
-        }
-      
-        90% {
-          transform: translate3d(-5px, 0, 0);
-        }
-      
-        to {
-          transform: translate3d(0, 0, 0);
-        }
-      }
 }

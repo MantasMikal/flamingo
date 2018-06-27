@@ -35,7 +35,7 @@ export default class Body extends Component {
   render() {
     return (
       <div className="main grid">
-        <div className="mainSeperator"><h1>Some interesting facts:</h1></div>
+        <div className="mainSeperator"><h1>Interesting Facts</h1></div>
         <Fact className="fact" factId={this.state.factId} handleNextFact={this.handleNextFact} handlePreviousFact={this.handlePreviousFact}/>
       </div>
     )

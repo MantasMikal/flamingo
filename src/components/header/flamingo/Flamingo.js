@@ -19,7 +19,7 @@ export default class Flamingo extends Component {
   render() {
     let flamingoClass = this.state.showFlamingo;
     return ( 
-        <div className={flamingoClass? "flamingo animated bounceInRight" : "flamingo hidden"} onClick={() => this.setState({showFlamingo: !this.state.showFlamingo})}>
+        <div className={flamingoClass? "flamingo" : "flamingo hidden"} onClick={() => this.setState({showFlamingo: !this.state.showFlamingo})}>
           <img src={flamingo} className="flamingoImg" />
         </div>
     )

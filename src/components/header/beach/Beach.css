@@ -7,83 +7,115 @@
     height: 100vh;
     width: 100%;
     top: 0;
-    z-index: 0;
 }
 
-/* Left Umbrella */
+.chair{
+    position: absolute;
+    bottom: -2vh;
+    left: 25vw;
+    z-index: 10;
+}
+
 .leftUmbrella{
     position: absolute;
     bottom: 1vh;
     left: 0vw;
-    z-index: 5;
+    z-index: 4;
+    transition: 0.25s;
+    cursor: pointer;
 }
-.leftUmbrellaImg{
-    width: 25vw;
 
+.leftUmbrella:hover {
+    bottom: -2vh;
 }
-/* Right Umbrella */
 
 .rightUmbrella{
     position: absolute;
     right: 10vw;
-    bottom: 5vh;
-    z-index: 5;
+    bottom: 8vh;
+    z-index: 4;
+    transition: 0.25s;
+    cursor: pointer;
 }
 
-.rightUmbrellaImg{
-    width: 25vw;
- 
+.rightUmbrella:hover{
+    bottom: 2vh;
 }
-/* Middle Umbrella */
 
 .middleUmbrella{
     position: absolute;
     bottom: 5vh;
     left: 30vw;
-    z-index: 3;
+    z-index: 4;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.middleUmbrella:hover {
+    bottom: -3vh;
+}
+
+.rightLeaf {
+    position: absolute;
+    right: -2vw;
+    top: 0;
+    z-index: 7;
+    pointer-events: none;
+}
+.leftLeaf{
+    position: absolute;
+    left: -2vw;
+    top: 0;
+    z-index: 5;
+    pointer-events: none;
+}
+.leftLeafDown {
+    position: absolute;
+    left: -2vw;
+    top: 10vh;
+    z-index: 5;
+    pointer-events: none
+}
+.sand {
+    position: absolute;
+    bottom: -15vh;
+    z-index: 5;
+}
+
+
+
+.leftUmbrellaImg{
+    width: 25vw;
+
+}
+
+.chairImg{
+    width: 20vw;
+    transform: scaleX(1);
+}
+
+
+.rightUmbrellaImg{
+    width: 25vw;
+ 
 }
 
 .middleUmbrellaImg{
     width: 30vw;
 
 }
-/* Right Leafs */
-.rightLeaf {
-    position: absolute;
-    right: -2vw;
-    top: 0;
-    z-index: 5;
-}
 
 .rightLeafImg {
     width: 30vw;
 }
-/* Left Leafs */
-.leftLeaf{
-    position: absolute;
-    left: -2vw;
-    top: 0;
-    z-index: 4;
-}
+
 .leftLeafImg {
     width: 30vw;
 }
 
-.leftLeafDown {
-    position: absolute;
-    left: -2vw;
-    top: 10vh;
-    z-index: 4;
-}
+
 .leftLeafDownImg {
     width: 30vw;
-}
-/* Sand */
-
-.sand {
-    position: absolute;
-    bottom: -15vh;
-    z-index: 10;
 }
 
 .sandImg {
@@ -91,10 +123,47 @@
     
 }
 
+@keyframes bounceInDownUmbrella {
+    0% {
+      opacity: 1;
+      transform: translate3d(0, 0px, 0);
+    }
 
-@media only screen and (max-width: 1000px) {
+    30%{
+        transform: translate3d(0, -40vh, 0);
+    }
+
+
+    60% {
+      opacity: 1;
+      transform: translate3d(0, 15px, 0);
+    }
+  
+    75% {
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    90% {
+      transform: translate3d(0, 5px, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .bounceInDownUmbrella {
+    animation-name: bounceInDownUmbrella;
+    animation-timing-function: cubic-bezier(.32,.73,.47,1);
+  }
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
     .sand {
-        bottom: -5vh;
+        bottom: -8vh;
     }
 
     .leftUmbrella {
@@ -113,6 +182,10 @@
 
     .leftLeafDown{
         left: -5vw;
+    }
+
+    .chair{
+        bottom: -4vh;
     }
 }
 
