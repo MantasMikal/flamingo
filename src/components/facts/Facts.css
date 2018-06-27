@@ -5,7 +5,7 @@
     background-color: #ffdbc2;
     font-family: Georgia, 'Times New Roman', Times, serif;
     
-    z-index: 1000;
+    z-index: 10;
     position: relative;
 }
 

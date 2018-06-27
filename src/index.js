@@ -5,12 +5,13 @@ import Facts from './components/facts/Facts';
 import Footer from './components/footer/Footer';
 import Nav from './components/nav/Nav'
 import About from './components/about/About';
+import Routes from './components/routes/Routes';
 
-import { BrowserRouter, Route } from 'react-router-dom'
-
+import './Index.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import registerServiceWorker from './registerServiceWorker';
-
 import React, { Component } from 'react'
+
 
 export default class App extends Component {
   constructor(props){
@@ -36,8 +37,7 @@ toggleNav() {
           <React.Fragment>
             <Nav className="nav" isOpen={this.state.isNavOpen} handleNav={this.toggleNav}/>
             <Header />
-            <Route exact path="/" component={Facts} />
-            <Route path="/about" component={About} />
+            <Routes />
             <Footer/>
           </React.Fragment>
         </BrowserRouter>

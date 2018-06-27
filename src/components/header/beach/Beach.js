@@ -19,7 +19,8 @@ export default class componentName extends Component {
             isMiddleUmbrellaAnimating: true,
             isLeftUmbrellaAnimating: true,
             isRightUmbrellaAnimating: true,
-            isLeftLeafAnimating: true
+            isLeftLeafAnimating: true,
+            isChairAnimating: true
         }
 
     }
@@ -29,6 +30,7 @@ export default class componentName extends Component {
         let rightUmbrellaClass = this.state.isRightUmbrellaAnimating;
         let leftUmbrellaClass = this.state.isLeftUmbrellaAnimating;
         let leftLeafClass = this.state.isLeftLeafAnimating;
+        let charClass = this.state.isChairAnimating;
     return (
 <div className="beach">
     <div className="leftLeafDown animated bounceInLeft"><img src={leftLeafDown} className="leftLeafDownImg"/></div>
@@ -54,7 +56,13 @@ export default class componentName extends Component {
         <img src={rightUmbrella} className="rightUmbrellaImg"/>
     </div>
     
-    <div className="chair"><img src={chair} className="chairImg"/></div>
+    <div className={charClass ? 'chair animated rubberBand' : 'chair' }
+      onClick={() => this.setState({isChairAnimating: true})}
+      onAnimationEnd={() => this.setState({isChairAnimating: false})}>
+        <img src={chair} className="chairImg"/>
+    </div>
+
+
     <div className="sand"><img src={sand} className="sandImg"/></div>
 </div>
     )

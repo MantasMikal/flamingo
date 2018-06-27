@@ -4,7 +4,7 @@
     width: 100%;
 
     /* Keeps page on top */
-    z-index: 1000;
+    z-index: 10;
     position: relative;
 }
 
@@ -12,7 +12,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 5vh 1fr 5vh;
-    background-color: #d86a1b;
+    background-color: #ffdbc2;
     font-family: Georgia, 'Times New Roman', Times, serif;
   
 }
