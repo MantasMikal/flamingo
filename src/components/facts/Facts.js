@@ -35,7 +35,7 @@ export default class Facts extends Component {
 
   render() {
     return (
-      <div className="main grid">
+      <div className="mainGrid">
         <div className="mainSeperator"><h1>Interesting Facts</h1></div>
         <Fact className="fact" factId={this.state.factId} handleNextFact={this.handleNextFact} handlePreviousFact={this.handlePreviousFact}/>
       </div>

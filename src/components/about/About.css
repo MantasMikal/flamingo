@@ -2,7 +2,10 @@
     height: 100vh;
     background-color: #ffdbc2;
     width: 100%;
+
+    /* Keeps page on top */
     z-index: 1000;
+    position: relative;
 }
 
 .gridAbout {
@@ -11,5 +14,5 @@
     grid-template-rows: 5vh 1fr 5vh;
     background-color: #d86a1b;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    z-index: 1000;
+  
 }

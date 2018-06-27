@@ -1,9 +1,12 @@
-.grid {
+.mainGrid {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 5vh 1fr 5vh;
     background-color: #ffdbc2;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    z-index: 1000;
+    position: relative;
 }
 
 .mainSeperator {
