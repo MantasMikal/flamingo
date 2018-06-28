@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.1bdbcc12.css",
-  "main.css.map": "static/css/main.1bdbcc12.css.map",
-  "main.js": "static/js/main.818e3748.js",
-  "main.js.map": "static/js/main.818e3748.js.map",
+  "main.css": "static/css/main.1c40aee5.css",
+  "main.css.map": "static/css/main.1c40aee5.css.map",
+  "main.js": "static/js/main.ff89d727.js",
+  "main.js.map": "static/js/main.ff89d727.js.map",
   "static\\media\\babyFlamigo.svg": "static/media/babyFlamigo.35408ec2.svg",
   "static\\media\\beachy.svg": "static/media/beachy.03e274c5.svg",
   "static\\media\\bossFlamingo.svg": "static/media/bossFlamingo.edcb726a.svg",
@@ -25,5 +25,8 @@
   "static\\media\\neverAlone.svg": "static/media/neverAlone.7a6e002f.svg",
   "static\\media\\rightLeaf.svg": "static/media/rightLeaf.0544c20a.svg",
   "static\\media\\sand.svg": "static/media/sand.042d9121.svg",
+  "static\\media\\shell.svg": "static/media/shell.cca70358.svg",
+  "static\\media\\shell2.svg": "static/media/shell2.28b70f8b.svg",
+  "static\\media\\shell3.svg": "static/media/shell3.9cc367b4.svg",
   "static\\media\\shrimp.svg": "static/media/shrimp.f0f189b7.svg"
 }
