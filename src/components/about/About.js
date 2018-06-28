@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import './About.css'
 
 import SimpleMap from './map/SimpleMap'
-
+import shell1 from '../../assets/img/shell.svg'
+import shell2 from '../../assets/img/shell2.svg'
+import shell3 from '../../assets/img/shell3.svg'
 export default class About extends Component {
 
     componentDidMount() {
@@ -33,12 +35,18 @@ export default class About extends Component {
             <i>/fləˈmɪŋɡəʊ/</i>
             <p>A tall wading bird with mainly pink or scarlet plumage and long legs and neck. It has a heavy bent bill that is held upside down in the water in order to filter-feed on small organisms.</p>
         </div>
+
+        {<div className="shell"><img src={shell3} /></div>}
+
         <div className="flamingoClassification"> 
             <h1>Scientific classification</h1>
             <ul>
                 {scientificClassification}
             </ul>
         </div> 
+
+    {<div className="shell2"><img src={shell2} /></div>}
+
         <div className="flamingoLocation">
             <table>
                 <tbody>

@@ -27,7 +27,7 @@
 .about h1 {
     font-size: calc(14px + 2vw);
     font-family: 'Lobster Two', cursive;
-    color: #F0659F;
+    color: rgb(241, 171, 200);
     padding-bottom: 2vh;
 }
 
@@ -67,6 +67,33 @@
     grid-row: 4;
     margin: auto;
     width: 100%;
+}
+
+.shell{
+    position: absolute;
+    right: 10vw;
+    background-color: #efc1a1;
+    border-radius: 50%;
+    padding: 20px 20px 20px 20px;
+}
+
+.shell img {
+    width: 10vw;
+    transform: rotateZ(-20deg);
+}
+
+.shell2{
+    position: absolute;
+    right: 10vw;
+    top: 50vh;
+    background-color: #efc1a1;
+    border-radius: 50%;
+    padding: 20px 20px 20px 20px;
+}
+
+.shell2 img {
+    width: 10vw;
+    transform: rotateZ(20deg);
 }
 
 
