@@ -6,7 +6,6 @@ import Footer from './components/footer/Footer';
 import Nav from './components/nav/Nav'
 import About from './components/about/About';
 import Routes from './components/routes/Routes';
-
 import './Index.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import registerServiceWorker from './registerServiceWorker';
@@ -41,7 +40,6 @@ toggleNav() {
             <Footer/>
           </React.Fragment>
         </BrowserRouter>
-      
     )
   }
 }

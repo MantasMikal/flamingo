@@ -9,12 +9,12 @@ import './Routes.css'
 
 function Routes({location}) {
     return(
-        <div>
+        <React.Fragment>
             <Switch location={location}>
                 <Route exact path="/" component={Facts} />
                 <Route path="/about" component={About} />
             </Switch>
-        </div>
+        </React.Fragment>
     )
 }
 
