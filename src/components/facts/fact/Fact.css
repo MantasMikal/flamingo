@@ -42,10 +42,9 @@
     margin: auto;
     grid-row: 1;
     grid-column: 1;
-    background-color: #cb86554d;
+    background-color: #efc1a1;
     border-radius: 50%;
     min-height: 60vh;
-
     cursor: pointer;
     transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s;
 }

@@ -32,7 +32,7 @@ toggleNav() {
 
   render() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <React.Fragment>
             <Nav className="nav" isOpen={this.state.isNavOpen} handleNav={this.toggleNav}/>
             <Header />

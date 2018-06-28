@@ -11,8 +11,8 @@ function Routes({location}) {
     return(
         <React.Fragment>
             <Switch location={location}>
-                <Route exact path="/" component={Facts} />
-                <Route path="/about" component={About} />
+                <Route exact path='/' component={Facts} />
+                <Route path='/about' component={About} />
             </Switch>
         </React.Fragment>
     )
