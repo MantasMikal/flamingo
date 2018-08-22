@@ -38,15 +38,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
     padding: 5% 5% 5% 5%;
     margin: auto;
-    grid-row: 1;
-    grid-column: 1;
-    background-color: #efc1a1;
     border-radius: 50%;
     min-height: 60vh;
+
+    background-color: #efc1a1;
     cursor: pointer;
+
     transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s;
+
+    grid-row: 1;
+    grid-column: 1;
 }
 
 .factImg:hover{
@@ -63,7 +67,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
 }
 
 

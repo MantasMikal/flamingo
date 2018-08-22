@@ -13,7 +13,7 @@
     position: absolute;
     bottom: -2vh;
     left: 25vw;
-    z-index: 10;
+    z-index: 6;
     cursor: pointer;
     transition: 0.25s;
     animation-duration: 0.75s;

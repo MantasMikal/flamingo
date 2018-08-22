@@ -5,6 +5,7 @@
     background-color: #ffdbc2;
     font-family: Georgia, 'Times New Roman', Times, serif;
     
+    /* Keeps on top */
     z-index: 10;
     position: relative;
 }
@@ -13,7 +14,7 @@
     display: flex;
     align-items: center;
     grid-column: 1/-1;
-    /* border-top: 5px dotted #1B5D82; */
+    padding-bottom: 3vh;
 }
 
 .mainSeperator h1{
@@ -23,12 +24,6 @@
     margin: 0;
     padding-left: 5vw;
 
-}
-
-.fact{
-    /* grid-column: 2/3;
-    grid-row: 2; */
-    /* border: 3px solid white; */
 }
 
 @media only screen and (max-width: 700px) {

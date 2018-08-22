@@ -1,5 +1,5 @@
  nav {
-     position: fixed;
+     position: absolute;
      z-index: 11;
  }
 
@@ -27,7 +27,6 @@
     user-select: none;
     border-radius: 0 0% 0% 0%;
     border: 2px solid white;
-
 }
 
 .open {

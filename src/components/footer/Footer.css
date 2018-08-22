@@ -1,5 +1,13 @@
 .footer {
-    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3vh;
     width: 100%;
     background-color: rgb(170, 86, 86);
+}
+
+#brand {
+    color: #ffdbc2;
+    font-family: Helvetica, sans-serif;
 }

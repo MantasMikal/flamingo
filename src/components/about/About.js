@@ -36,18 +36,13 @@ export default class About extends Component {
             <p>A tall wading bird with mainly pink or scarlet plumage and long legs and neck. It has a heavy bent bill that is held upside down in the water in order to filter-feed on small organisms.</p>
         </div>
 
-        {<div className="shell"><img src={shell3} /></div>}
-
-        <div className="flamingoClassification"> 
+              <div className="flamingoClassification"> 
             <h1>Scientific classification</h1>
             <ul>
                 {scientificClassification}
             </ul>
         </div> 
-
-    {<div className="shell2"><img src={shell2} /></div>}
-
-        <div className="flamingoLocation">
+            <div className="flamingoLocation">
             <table>
                 <tbody>
                 <tr>
