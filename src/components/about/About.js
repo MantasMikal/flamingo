@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import './About.css'
 
 import SimpleMap from './map/SimpleMap'
-import shell1 from '../../assets/img/shell.svg'
-import shell2 from '../../assets/img/shell2.svg'
-import shell3 from '../../assets/img/shell3.svg'
+// import shell1 from '../../assets/img/shell.svg'
+// import shell2 from '../../assets/img/shell2.svg'
+// import shell3 from '../../assets/img/shell3.svg'
 export default class About extends Component {
 
     componentDidMount() {

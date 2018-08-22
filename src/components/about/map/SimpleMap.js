@@ -4,8 +4,6 @@ import {
   ZoomableGroup,
   Geographies,
   Geography,
-  Markers,
-  Marker,
 } from "react-simple-maps"
 
 import { scaleLinear } from "d3-scale"

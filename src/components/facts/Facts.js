@@ -26,7 +26,6 @@ export default class Facts extends Component {
   handlePreviousFact() {
     let prevFactId = this.state.factId - 1;
     //TODO: MOVE FACTS HERE (PARENT) TO GET HOW MUCH FACTS THERE CURRENTLY ARE?
-    console.log("PREVIOUS FACT: ", prevFactId);
     prevFactId <= 0 ? prevFactId = 10 : prevFactId;
     this.setState({
       factId: prevFactId
@@ -37,7 +36,7 @@ export default class Facts extends Component {
     return (
       <div className="mainGrid animated slideInLeft">
         <div className="mainSeperator"><h1>Interesting Facts</h1></div>
-        <Fact className="fact" factId={this.state.factId} handleNextFact={this.handleNextFact} handlePreviousFact={this.handlePreviousFact}/>
+        <Fact className="fact" factId={this.state.factId} handleNextFact={this.handleNextFact} handlePreviousFact={this.handlePreviousFact} />
       </div>
     )
   }
@@ -48,6 +47,6 @@ Facts.defaultProps = {
 };
 
 //Utils
-function getRandomInt(max) {
-  return Math.floor(Math.random() * Math.floor(max));
-}
+// function getRandomInt(max) {
+//   return Math.floor(Math.random() * Math.floor(max));
+// }

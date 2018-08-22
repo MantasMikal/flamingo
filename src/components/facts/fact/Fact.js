@@ -38,7 +38,7 @@ export default class Fact extends Component {
       )
 
       let displayImage = (
-            <img src={facts[factId].image} className="animated rotateIn" key={factId + "img"}/>
+            <img src={facts[factId].image} className="animated rotateIn" key={factId + "img"} alt="Fact"/>
       )
 
       let factImageClass = this.state.isFactImageAnimating;

@@ -6,9 +6,6 @@ import './Nav.css';
 
 
 export default class Nav extends Component {
-    constructor(props){
-        super(props);
-    }
   render() {
       let sidebarClass = this.props.isOpen ? 'navigation open fast animated slideInLeft' : 'navigation';
     return (
@@ -19,7 +16,7 @@ export default class Nav extends Component {
           <Link to="/" className="link">Home</Link>
           <Link to="/about" className="link">About</Link>
         </div>
-    </nav>
+      </ nav>
     )
   }
 }

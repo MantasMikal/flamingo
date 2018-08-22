@@ -29,41 +29,42 @@ export default class componentName extends Component {
         let middleUmbrellaClass = this.state.isMiddleUmbrellaAnimating;
         let rightUmbrellaClass = this.state.isRightUmbrellaAnimating;
         let leftUmbrellaClass = this.state.isLeftUmbrellaAnimating;
-        let leftLeafClass = this.state.isLeftLeafAnimating;
+        //let leftLeafClass = this.state.isLeftLeafAnimating;
         let charClass = this.state.isChairAnimating;
+
     return (
 <div className="beach">
-    <div className="leftLeafDown animated bounceInLeft"><img src={leftLeafDown} className="leftLeafDownImg"/></div>
-    <div className='leftLeaf animated bounceInLeft'><img src={leftLeaf} className="leftLeafImg"/></div>
-    <div className="rightLeaf animated bounceInRight"><img src={rightLeaf} className="rightLeafImg"/></div>
+    <div className="leftLeafDown animated bounceInLeft"><img src={leftLeafDown} className="leftLeafDownImg" alt="Leaf"/></div>
+    <div className='leftLeaf animated bounceInLeft'><img src={leftLeaf} className="leftLeafImg" alt="Leaf"/></div>
+    <div className="rightLeaf animated bounceInRight"><img src={rightLeaf} className="rightLeafImg" alt="Leaf"/></div>
     
     
     <div className={leftUmbrellaClass ? 'leftUmbrella animated bounceInDownUmbrella' : 'leftUmbrella'}
       onClick={() => this.setState({isLeftUmbrellaAnimating: true})}
       onAnimationEnd={() => this.setState({isLeftUmbrellaAnimating: false})}>
-        <img src={leftUmbrella} className="leftUmbrellaImg"/>
+        <img src={leftUmbrella} className="leftUmbrellaImg" alt="Umbrella"/>
     </div>
 
     <div className={middleUmbrellaClass ? 'middleUmbrella animated bounceInDownUmbrella' : 'middleUmbrella'} 
       onClick={() => this.setState({isMiddleUmbrellaAnimating: true})} 
       onAnimationEnd={() => this.setState({isMiddleUmbrellaAnimating: false})}>
-        <img src={middleUmbrella} className="middleUmbrellaImg" />
+        <img src={middleUmbrella} className="middleUmbrellaImg" alt="Umbrella" />
     </div>
 
     <div className={rightUmbrellaClass ? 'rightUmbrella animated bounceInDownUmbrella' : 'rightUmbrella'}
       onClick={() => this.setState({isRightUmbrellaAnimating: true})}
       onAnimationEnd={() => this.setState({isRightUmbrellaAnimating: false})}>
-        <img src={rightUmbrella} className="rightUmbrellaImg"/>
+        <img src={rightUmbrella} className="rightUmbrellaImg" alt="Umbrella"/>
     </div>
     
     <div className={charClass ? 'chair animated rubberBand' : 'chair' }
       onClick={() => this.setState({isChairAnimating: true})}
       onAnimationEnd={() => this.setState({isChairAnimating: false})}>
-        <img src={chair} className="chairImg"/>
+        <img src={chair} className="chairImg" alt="Chair"/>
     </div>
 
 
-    <div className="sand"><img src={sand} className="sandImg"/></div>
+    <div className="sand"><img src={sand} className="sandImg" alt="Sand"/></div>
 </div>
     )
   }

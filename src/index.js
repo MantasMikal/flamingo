@@ -1,13 +1,11 @@
 
 import ReactDOM from 'react-dom';
 import Header from './components/header/Header'
-import Facts from './components/facts/Facts';
 import Footer from './components/footer/Footer';
 import Nav from './components/nav/Nav'
-import About from './components/about/About';
 import Routes from './components/routes/Routes';
 import './Index.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import {BrowserRouter} from 'react-router-dom'
 import registerServiceWorker from './registerServiceWorker';
 import React, { Component } from 'react'
 
