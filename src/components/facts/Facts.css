@@ -1,6 +1,6 @@
 .mainGrid {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 10fr 1fr;
     grid-template-rows: 5vh 1fr 5vh;
     background-color: #ffdbc2;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -14,8 +14,10 @@
     display: flex;
     align-items: center;
     grid-column: 1/-1;
-    padding-bottom: 3vh;
+    padding-bottom: 1.1rem;
 }
+
+
 
 .mainSeperator h1{
     font-size: calc(14px + 2vw);

@@ -35,7 +35,7 @@ export default class Facts extends Component {
   render() {
     return (
       <div className="mainGrid animated slideInLeft">
-        <div className="mainSeperator"><h1>Interesting Facts</h1></div>
+        <div className="mainSeperator"><h1 className="headline">Interesting Facts</h1></div>
         <Fact className="fact" factId={this.state.factId} handleNextFact={this.handleNextFact} handlePreviousFact={this.handlePreviousFact} />
       </div>
     )
