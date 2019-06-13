@@ -1,8 +1,8 @@
 {
-  "name": "flamingo-app",
+  "name": "flamingo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mantasmikal.github.io/flamingo-app/",
+  "homepage": "https://mantasmikal.github.io/flamingo/",
   "dependencies": {
     "animate.css": "^3.6.1",
     "d3-scale": "^2.1.0",
