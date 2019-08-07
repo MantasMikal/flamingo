@@ -1,7 +1,7 @@
 {
   "name": "flamingo",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://mantasmikal.github.io/flamingo/",
   "dependencies": {
     "animate.css": "^3.6.1",
