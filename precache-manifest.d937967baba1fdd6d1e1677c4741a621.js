@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dca4622767f63c03f467115f02699a50",
+    "revision": "ced28b64d9fb20d27ecabbf0f860ca89",
     "url": "/flamingo/index.html"
   },
   {
-    "revision": "6536bb50cbdd70364ffd",
+    "revision": "1c2b38b1054713c5e019",
     "url": "/flamingo/static/css/main.9a2b8d45.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/flamingo/static/js/2.bcfb04ec.chunk.js"
   },
   {
-    "revision": "6536bb50cbdd70364ffd",
-    "url": "/flamingo/static/js/main.d6e3e100.chunk.js"
+    "revision": "1c2b38b1054713c5e019",
+    "url": "/flamingo/static/js/main.36f6f197.chunk.js"
   },
   {
     "revision": "7c46d5695bb9e6df782f",
