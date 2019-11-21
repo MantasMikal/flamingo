@@ -17,10 +17,6 @@
     z-index: 12;
 }
 
-.navIcon {
-    display: flex;
-}
-
  .navigation {
     display: none;
     flex-direction: column;
