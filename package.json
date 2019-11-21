@@ -4,16 +4,16 @@
   "private": false,
   "homepage": "https://mantasmikal.github.io/flamingo/",
   "dependencies": {
-    "animate.css": "^3.6.1",
-    "d3-scale": "^2.1.0",
-    "gh-pages": "^1.2.0",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
-    "react-icons-kit": "^1.1.5",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
+    "animate.css": "^3.7.2",
+    "d3-scale": "^3.2.0",
+    "gh-pages": "^2.1.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-icons-kit": "^1.3.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
     "react-simple-maps": "^0.12.1",
-    "react-transition-group": "^2.3.1"
+    "react-transition-group": "^4.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,10 +24,22 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "eslint-config-standard": "^11.0.0",
+    "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

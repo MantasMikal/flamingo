@@ -17,7 +17,9 @@ export default class Facts extends Component {
   handleNextFact() {
     let nextFactId = this.state.factId + 1;
     //TODO: MOVE FACTS HERE (PARENT) TO GET HOW MUCH FACTS THERE CURRENTLY ARE?
-    nextFactId > 10 ? nextFactId = 0 : nextFactId;
+    // nextFactId > 10 ? nextFactId = 0 : nextFactId;
+
+    nextFactId =  nextFactId > 10 ?  0 : nextFactId;
     this.setState({
       factId: nextFactId
     })
@@ -26,7 +28,7 @@ export default class Facts extends Component {
   handlePreviousFact() {
     let prevFactId = this.state.factId - 1;
     //TODO: MOVE FACTS HERE (PARENT) TO GET HOW MUCH FACTS THERE CURRENTLY ARE?
-    prevFactId <= 0 ? prevFactId = 10 : prevFactId;
+    prevFactId = prevFactId <= 0 ? 10 : prevFactId;
     this.setState({
       factId: prevFactId
     })
